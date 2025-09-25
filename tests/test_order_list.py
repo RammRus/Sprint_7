@@ -1,8 +1,8 @@
 import pytest
 import allure
 import requests
+from urls import *
 
-main_url = 'https://qa-scooter.praktikum-services.ru/'
 @allure.title('Проверка списка заказов')
 def test_get_order_list():
     response = requests.get(f"{main_url}api/v1/orders/track")

@@ -2,8 +2,8 @@ import requests
 import pytest
 import allure
 from conftest import *
+from urls import *
 
-main_url = 'https://qa-scooter.praktikum-services.ru/'
 
 @allure.title('Тест на создание курьера')
 def test_create_courier_success(courier):

@@ -1,8 +1,8 @@
 import requests
 import pytest
 import allure
+from urls import *
 
-main_url = 'https://qa-scooter.praktikum-services.ru/'
 
 @allure.title('Успешная авторизация курьера')
 def test_courier_login_success(courier):

@@ -2,8 +2,9 @@ import pytest
 import allure
 from data import DataOrder
 import requests
+from urls import *
 
-main_url = 'https://qa-scooter.praktikum-services.ru/'
+
 @allure.title('Создание заказа с разным указанием цветов самоката')
 @pytest.mark.parametrize("colors", [
     (["BLACK"]), #Черный
